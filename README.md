@@ -22,3 +22,13 @@ https://pypi.org/project/python-dotenv/
 ```Bash
 python3 app.py
 ```
+
+## Scripting
+
+To send a state to server:
+
+```
+from api.send import send
+
+send(<yourStateHere>)
+```
