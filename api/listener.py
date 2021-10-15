@@ -1,6 +1,9 @@
 import os
 from settings import osc
 from api.send import send
+from states.activate import activate
+from states.solved import solved
+from states.deactivate import deactivate
 
 # Listen for a server message and detect which state is given.
 def listener():
@@ -12,15 +15,15 @@ def listener():
   def detectState(*values):
     if values[0] == 0:
       print('Going into inactive state')
-      # Inactive state logic
+      deactivate()
 
     elif values[0] == 1:
       print('Going into active state')
-      # Active state logic
+      activate()
 
     elif values[0] == 100:
       print('Puzzle force solved by server')
-      # Active state logic
+      solved()
       
     elif values[0] == 999:
       print('send live state to server')
