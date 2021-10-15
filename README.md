@@ -32,3 +32,5 @@ from api.send import send
 
 send(<yourStateHere>)
 ```
+
+Write your state logic under states/_yourStateName_
