@@ -1,7 +1,7 @@
-from api.send import send
+from api.sendToServer import sendToServer
 
 def activate():
   # activation logic
 
   #after this send active state to server
-  send(1)
+  sendToServer(1)

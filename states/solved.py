@@ -1,7 +1,7 @@
-from api.send import send
+from api.sendToServer import sendToServer
 
 def solved():
   # solved logic
 
   #after this send solved state to server
-  send(100)
+  sendToServer(100)

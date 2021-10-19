@@ -1,7 +1,7 @@
-from api.send import send
+from api.sendToServer import sendToServer
 
 def deactivate():
   # deactivation logic
 
   #after this send inactive state to server
-  send(0)
+  sendToServer(0)

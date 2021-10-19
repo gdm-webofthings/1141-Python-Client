@@ -1,6 +1,6 @@
 import os
 from settings import osc
-from api.send import send
+from api.sendToServer import sendToServer
 from states.activate import activate
 from states.solved import solved
 from states.deactivate import deactivate
@@ -27,4 +27,4 @@ def listener():
       
     elif values[0] == 999:
       print('send live state to server')
-      send(999)
+      sendToServer(999)
