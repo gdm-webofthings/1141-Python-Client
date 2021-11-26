@@ -12,5 +12,4 @@ listener()
 print('Script running')
 
 # Ensure script keeps running
-while True:
-  pass
+input("Press enter to end script")

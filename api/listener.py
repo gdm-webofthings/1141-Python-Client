@@ -7,6 +7,7 @@ from states.deactivate import deactivate
 
 # Listen for a server message and detect which state is given.
 def listener():
+
   # Initialise this client's listening osc server
   sock = osc.listen(address=os.getenv('LOCAL_IP'), port=int(os.getenv('LOCAL_PORT')), default=True)
 
@@ -28,3 +29,8 @@ def listener():
     elif values[0] == 999:
       print('send live state to server')
       sendToServer(999)
+      
+    else:
+      print("got wrong state")
+      
+    # Add your own states here
